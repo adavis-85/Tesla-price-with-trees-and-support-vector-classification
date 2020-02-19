@@ -58,6 +58,22 @@ through cross-validation and pruned to that size.
 set.seed(3)
 cv.TSLA=cv.tree(tree.TSLA,FUN=prune.misclass)
 cv.TSLA
+
+$size
+[1] 14 10  8  7  3  2  1
+
+$dev
+[1]  93  94  92  95 103  97 117
+
+$k
+[1]  -Inf  0.00  1.00  2.00  4.25  5.00 17.00
+
+$method
+[1] "misclass"
+
+attr(,"class")
+[1] "prune"         "tree.sequence"
+
 prunedTSLA=prune.misclass(tree.TSLA,best=8)
 plot(prunedTSLA)
 text(prunedTSLA,pretty=0)
