@@ -35,7 +35,7 @@ Residual mean deviance:  1.314 = 325.8 / 248
 Misclassification error rate: 0.415 = 105 / 253 
 
 ```
-![image](https://user-images.githubusercontent.com/58529391/74867036-d1a02a80-5308-11ea-95a7-2cd9c22b4435.png)
+![image](https://user-images.githubusercontent.com/58529391/74867063-dc5abf80-5308-11ea-95a3-b5cdc6e237fd.png)
 
 Next a prediction will be made using sampling through the data.
 ```
@@ -63,7 +63,7 @@ plot(prunedTSLA)
 text(prunedTSLA,pretty=0)
 
 ```
-![image](https://user-images.githubusercontent.com/58529391/74867063-dc5abf80-5308-11ea-95a3-b5cdc6e237fd.png)
+![image](https://user-images.githubusercontent.com/58529391/74867036-d1a02a80-5308-11ea-95a7-2cd9c22b4435.png)
 
 Also the pruned model will be used to make a prediction.
 ```
