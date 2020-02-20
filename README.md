@@ -174,8 +174,8 @@ predict  0  1
       0 47 27
       1  6 20
  ```
- The accuracy rate for the radial model is 67%.  The rate is an improvement but
- only for the direction going down being correctly predicted.  The prediction rate for 
+ The accuracy rate for the radial model is 67%.  The rate is an improvement.  The accuracy 
+ rate for a zero predicted is 63% and a one being predicted is 76%The prediction rate for 
  the direction going up has gone down more than 50%.  
  Now for a polynomial kernel.
  ```
