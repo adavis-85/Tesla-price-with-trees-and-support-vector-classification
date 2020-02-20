@@ -175,8 +175,7 @@ predict  0  1
       1  6 20
  ```
  The accuracy rate for the radial model is 67%.  The rate is an improvement.  The accuracy 
- rate for a zero predicted is 63% and a one being predicted is 76%The prediction rate for 
- the direction going up has gone down more than 50%.  
+ rate for a zero predicted is 63% and a one being predicted is 76%.
  Now for a polynomial kernel.
  ```
  tuneTSLA3=tune(svm,y~.,data=data2,kernel="polynomial",gamma=c(.01,.1,.5,1,2,3,4),ranges=list(cost=c(.001,.01,.1,1,5,10,100)))
@@ -189,5 +188,6 @@ predict  0  1
       1  0  3
  ```
  The accuracy for the polynomial kernel is 56%.  The accuracy for a zero being predicted correctly has gone up 6% and the 
- accuracy for a one being predicted correctly has gone down 17%.  The best performing model was the svm with a radial
+ accuracy for a one being predicted correctly has gone up to 100% of predictions.  Most of the errors have been 
+ predicting zeros incorrectly.  The best performing model was the svm with a radial
  kernel.  It performed better than a tree model though the performance for certain choices is not ideal.
