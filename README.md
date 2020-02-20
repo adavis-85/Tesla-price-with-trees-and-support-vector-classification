@@ -188,6 +188,6 @@ predict  0  1
       1  0  3
  ```
  The accuracy for the polynomial kernel is 56%.  The accuracy for a zero being predicted correctly has gone up 6% and the 
- accuracy for a one being predicted correctly has gone up to 100% of predictions.  Most of the errors have been 
+ accuracy for a one being predicted correctly has gone up to 100% of predictions.  All of the errors have been 
  predicting zeros incorrectly.  The best performing model was the svm with a radial
  kernel.  It performed better than a tree model though the performance for certain choices is not ideal.
